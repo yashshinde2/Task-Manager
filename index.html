@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
     <title>Task Manager</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container py-5">
+        <h1 class="text-center mb-5 glowing-title">Task Manager</h1>
 
+        <div class="input-group mb-4 shadow-sm">
+            <input type="text" id="taskInput" class="form-control task-input" placeholder="What's on your mind?">
+            <button class="btn add-btn" id="addTaskBtn">Add</button>
+        </div>
 
+        <div id="taskList" class="task-list-area">
+            
+        </div>
 
+        <p id="noTaskMsg" class="text-center no-task-msg">You have no tasks yet 🎉</p>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
-<script src="js/script.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.min.js"></script>
 </html>
